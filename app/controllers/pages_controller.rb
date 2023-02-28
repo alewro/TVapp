@@ -4,10 +4,11 @@ class PagesController < ApplicationController
   end
 
   def counting
+    @story = Story.find(params[:id])
     @coupon = Coupon.last.quantity
-    @coupon = @coupon - 1
+    @coupon = @coupon - @story.weight
     Coupon.last.update(quantity: @coupon)
-    redirect_to root_path
+    redirect_to stories_path
   end
 
   def date
