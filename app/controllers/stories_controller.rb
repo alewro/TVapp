@@ -4,6 +4,7 @@ class StoriesController < ApplicationController
   # GET /stories or /stories.json
   def index
     @stories = Story.all
+    @coupons = Coupon.last.quantity
   end
   
   def manage

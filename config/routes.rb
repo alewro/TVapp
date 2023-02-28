@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "pages#index"
   get 'manage', to: 'stories#manage'
+  post 'date', to: 'pages#date'
 end
