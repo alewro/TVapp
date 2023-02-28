@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Manage your shows</h1>
+<%= link_to "New story", new_story_path %>
+<%= link_to "Back to home page", root_path %>
 
 <div id="stories">
   <% @stories.each do |story| %>
@@ -11,4 +13,4 @@
   <% end %>
 </div>
 
-<%= link_to "New story", new_story_path %>
+

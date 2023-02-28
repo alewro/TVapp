@@ -1,12 +1,10 @@
 <p style="color: green"><%= notice %></p>
+<h1>You have <%= @coupons %> coupons left</h1>
 
-<h1>Select a show</h1>
+<h2>Select a show</h2>
 
 <div id="stories">
   <% @stories.each do |story| %>
-    <%= render story %>
-    <p>
-      <%= link_to "Show this story", story %>
-    </p>
+   <%= link_to story.title %>
   <% end %>
 </div>

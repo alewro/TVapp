@@ -4,7 +4,8 @@
 
 <div>
   <%= link_to "Edit this story", edit_story_path(@story) %> |
-  <%= link_to "Back to stories", stories_path %>
+  <%= link_to "Back to home page", root_path %>
+   <%= link_to "Add story", new_story_path %>
 
   <%= button_to "Destroy this story", @story, method: :delete %>
 </div>
