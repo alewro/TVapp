@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :verify_authenticity_token
+ skip_before_action :verify_authenticity_token, only: [ :counting ]
 
   def index
   end
@@ -11,15 +11,4 @@ class PagesController < ApplicationController
     Coupon.last.update(quantity: @coupon)
     redirect_to stories_path
   end
-
-  def date
-    if Coupon.where(:date => Time.now.to_date).present?
-        redirect_to stories_path
-    else
-        @coupon = Coupon.new(:date => Time.now.to_date, :quantity => 60)
-        @coupon.save
-        redirect_to stories_path
-    end
-  end
-
 end

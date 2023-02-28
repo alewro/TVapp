@@ -1,5 +1,6 @@
 class StoriesController < ApplicationController
   before_action :set_story, only: %i[ show edit update destroy ]
+  before_action :date, only: [:index]
 
   # GET /stories or /stories.json
   def index
@@ -72,4 +73,12 @@ class StoriesController < ApplicationController
     def story_params
       params.require(:story).permit(:title, :duration, :weight)
     end
+
+    def date
+      if !Coupon.where(:date => Time.now.to_date).present?
+        @coupon = Coupon.new(:date => Time.now.to_date, :quantity => 60)
+        @coupon.save
+      end
+    end
+
 end
