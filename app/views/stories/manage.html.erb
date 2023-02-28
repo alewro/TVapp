@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Select a show</h1>
+<h1>Manage your shows</h1>
 
 <div id="stories">
   <% @stories.each do |story| %>
@@ -10,3 +10,5 @@
     </p>
   <% end %>
 </div>
+
+<%= link_to "New story", new_story_path %>
