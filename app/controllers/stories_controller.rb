@@ -6,7 +6,7 @@ class StoriesController < ApplicationController
   def index
     @stories = Story.all
     @coupons = Coupon.last.quantity
-    redirect_to end_path if @coupons < 0
+    redirect_to end_path if @coupons <= 0
   end
   
   def manage

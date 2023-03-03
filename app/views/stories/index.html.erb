@@ -1,7 +1,11 @@
 <p style="color: green"><%= notice %></p>
+<div>
 <h1>You have <%= @coupons %> coupons left</h1>
 
+<progress value=<%= @coupons %> max="60"></progress>
+
 <h2>Select a show</h2>
+</div>
 
 <div id="stories">
   <% @stories.each do |story| %>
@@ -13,4 +17,6 @@
   <% end %>
 </div>
 
-<%= button_to "Back to home page", root_path, method: :get %>
+<div>
+<%= link_to "Back to home page", root_path %>
+</div>
