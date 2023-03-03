@@ -5,7 +5,11 @@
 
 <div id="stories">
   <% @stories.each do |story| %>
-   <%= button_to story.title, story, method: :counting %>
+    <% if story.weight <= @coupons %>
+      <%= button_to story.title, story, method: :counting %>
+    <% elsif story.weight > @coupons && story.weight < 10 %>
+      <%= button_to story.title, story, method: :counting %>
+    <% end %>
   <% end %>
 </div>
 
