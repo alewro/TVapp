@@ -1,0 +1,7 @@
+button {
+  min-width: 250px;
+  min-height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
