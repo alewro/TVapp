@@ -7,8 +7,17 @@ class PagesController < ApplicationController
     @story = Story.find(params[:id])
     @coupon = Coupon.last.quantity
     @coupon -= @story.weight
-    Coupon.last.update(quantity: @coupon)
-    redirect_to stories_path
+    if @coupon > 0
+      Coupon.last.update(quantity: @coupon)
+      redirect_to stories_path
+    else
+      Coupon.last.update(quantity: @coupon)
+      redirect_to end_path
+    end
+    
+  end
+
+  def end 
   end
 
 end
