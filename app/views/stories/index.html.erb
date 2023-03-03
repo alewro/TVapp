@@ -5,8 +5,8 @@
 
 <div id="stories">
   <% @stories.each do |story| %>
-   <%= link_to story.title, story, data: { turbo_method: :counting } %>
+   <%= button_to story.title, story, method: :counting %>
   <% end %>
 </div>
 
-<%= link_to "Back to home page", root_path %>
+<%= button_to "Back to home page", root_path, method: :get %>
