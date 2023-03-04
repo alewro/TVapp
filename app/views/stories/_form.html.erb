@@ -10,23 +10,24 @@
       </ul>
     </div>
   <% end %>
+  <div class="form">
+    <div class="input-container ic2">
+        <%= form.label :title, class:"placeholder" %>
+        <%= form.text_field :title, class:"input" %>
+    </div>
+      <div class="input-container ic2">
+        <%= form.label :duration, class:"placeholder" %>
+        <%= form.text_field :duration, class:"input" %>
+      </div>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
+      <div class="input-container ic2">
+        <%= form.label :weight, class:"placeholder" %>
+        <%= form.number_field :weight, class:"input" %>
+      </div>
 
-  <div>
-    <%= form.label :duration, style: "display: block" %>
-    <%= form.text_field :duration %>
-  </div>
-
-  <div>
-    <%= form.label :weight, style: "display: block" %>
-    <%= form.number_field :weight %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+      <div>
+        <%= form.submit class:"submit" %>
+      </div>
+    </div>
   </div>
 <% end %>
