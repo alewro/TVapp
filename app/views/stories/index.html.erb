@@ -7,12 +7,12 @@
 <h2>Select a show</h2>
 </div>
 
-<div id="stories">
+<div id="shows">
   <% @stories.each do |story| %>
     <% if story.weight <= @coupons %>
-      <%= button_to "", story, method: :counting, style:"background-image: url('/assets/#{story.title}.jpg');" %>
+      <%= button_to "", story, method: :counting, style:"background-image: url('/assets/#{story.title}.jpg');", class:"button-5" %>
     <% elsif story.weight > @coupons && story.weight < 10 %>
-      <%= button_to story.title, story, method: :counting, style:"background-image: url('/assets/#{story.title}.jpg');" %>
+      <%= button_to story.title, story, method: :counting, style:"background-image: url('/assets/#{story.title}.jpg');", class:"button-5" %>
     <% end %>
   <% end %>
 </div>

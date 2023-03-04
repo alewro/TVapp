@@ -21,3 +21,10 @@ body {
 .stories {
   margin-top: 10px;
 }
+
+#shows {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
