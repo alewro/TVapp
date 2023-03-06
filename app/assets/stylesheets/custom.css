@@ -30,10 +30,12 @@ body {
 }
 
 .form {
-  background-color: #15172b;
+  background-color: #fff;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 500px;
+  border-color: #0B5394;
+  border-style: solid;
+  height: 400px;
   padding: 20px;
   width: 320px;
 }
@@ -43,20 +45,15 @@ body {
   width: 100%;
 }
 
-.ic1 {
-  margin-top: 40px;
-}
-
-.ic2 {
+.ic {
   margin-top: 30px;
 }
 
 .input {
-  background-color: #303245;
+  background-color: #eee;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
   font-size: 18px;
   height: 100%;
   outline: 0;
@@ -65,7 +62,7 @@ body {
 }
 
 .cut {
-  background-color: #15172b;
+  background-color: #fff;
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -74,10 +71,6 @@ body {
   transform: translateY(0);
   transition: transform 200ms;
   width: 76px;
-}
-
-.cut-short {
-  width: 50px;
 }
 
 .input:focus ~ .cut,
@@ -107,11 +100,11 @@ body {
 }
 
 .input:focus ~ .placeholder {
-  color: #dc2f55;
+  color: #944C0B;
 }
 
 .submit {
-  background-color: #08d;
+  background-color: #0B5394;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
@@ -125,5 +118,5 @@ body {
 }
 
 .submit:active {
-  background-color: #06b;
+  background-color: #0B5394;
 }

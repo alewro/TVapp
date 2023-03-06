@@ -11,18 +11,21 @@
     </div>
   <% end %>
   <div class="form">
-    <div class="input-container ic2">
-        <%= form.label :title, class:"placeholder" %>
-        <%= form.text_field :title, class:"input" %>
+    <div class="input-container ic">
+      <%= form.text_field :title, class:"input", placeholder: " " %>
+       <div class="cut"></div>
+      <%= form.label :title, class:"placeholder" %>
     </div>
-      <div class="input-container ic2">
+      <div class="input-container ic">
+        <%= form.text_field :duration, class:"input", placeholder: " " %>
+         <div class="cut"></div>
         <%= form.label :duration, class:"placeholder" %>
-        <%= form.text_field :duration, class:"input" %>
       </div>
 
-      <div class="input-container ic2">
+      <div class="input-container ic">
+        <%= form.number_field :weight, class:"input", placeholder: " " %>
+         <div class="cut"></div>
         <%= form.label :weight, class:"placeholder" %>
-        <%= form.number_field :weight, class:"input" %>
       </div>
 
       <div>
