@@ -2,6 +2,9 @@ html,
 body {
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
+  background: radial-gradient(circle, #944b0ba3 10%, transparent 11%),radial-gradient(circle at bottom left, #944b0ba3 5%, transparent 6%),radial-gradient(circle at bottom right, #944b0ba3 5%, transparent 6%),radial-gradient(circle at top left, #944b0ba3 5%, transparent 6%),radial-gradient(circle at top right, #944b0ba3 5%, transparent 6%);
+        background-size: 1em 1em;
+        background-color: #ffffff;
 }
 
 .home {
@@ -105,7 +108,7 @@ body {
 }
 
 .input:focus ~ .placeholder {
-  color: #0B5394;
+  color: #003B47;
 }
 
 .submit {
@@ -129,7 +132,7 @@ h2 {
 
 progress {
   justify-content: center;
-  accent-color: #0B5394;
+  accent-color: #003B47;
 }
 
 .buttons {
