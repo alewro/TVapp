@@ -38,7 +38,7 @@ body {
   background-color: #fff;
   border-radius: 20px;
   box-sizing: border-box;
-  border-color: #0B5394;
+  border-color: #944C0B;
   border-style: solid;
   height: 400px;
   padding: 20px;
@@ -105,11 +105,11 @@ body {
 }
 
 .input:focus ~ .placeholder {
-  color: #944C0B;
+  color: #0B5394;
 }
 
 .submit {
-  background-color: #0B5394;
+  background-color: #944C0B;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
@@ -120,10 +120,6 @@ body {
   margin-top: 38px;
   text-align: center;
   width: 100%;
-}
-
-.submit:active {
-  background-color: #0B5394;
 }
 
 h1, 
@@ -138,7 +134,7 @@ progress {
 
 .buttons {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 20px;

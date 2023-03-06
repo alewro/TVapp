@@ -31,6 +31,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-right: 10px;
 }
 
 .button-1:hover,
@@ -63,6 +64,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-right: 10px;
 }
 
 .button-2:hover,
@@ -132,6 +134,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
 }
 
 .button-4:hover,
@@ -157,6 +160,7 @@ button {
   list-style: none;
   margin: auto;
   margin-top: 15px;
+ 
   outline: none;
   padding: 10px 16px;
   position: relative;

@@ -1,12 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
+<div class="centerform">
 <%= render @story %>
+</div>
 
-<div>
+<div class="buttons">
   <%= link_to "Edit this story", edit_story_path(@story), class:"button-2" %>
   <%= link_to "Destroy this story", @story, data: { turbo_method: :delete }, class:"button-2" %>
 </div>
-<div>
+<div class="buttons">
   <%= link_to "Back to stories", manage_path, class:"button-1" %>
   <%= link_to "Back to home page", root_path, class:"button-1" %>
 </div>
