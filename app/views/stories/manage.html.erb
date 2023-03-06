@@ -1,9 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Manage your shows</h1>
-<%= link_to "New story", new_story_path, class:"button-1" %>
-<%= link_to "Back to home page", root_path, class:"button-1" %>
-
+<div class="buttons">
+  <%= link_to "New story", new_story_path, class:"button-1" %>
+  <%= link_to "Back to home page", root_path, class:"button-1" %>
+</div>
 <div id="stories">
   <% @stories.each do |story| %>
     <div class="stories">

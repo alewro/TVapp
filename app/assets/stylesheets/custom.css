@@ -22,11 +22,16 @@ body {
   margin-top: 10px;
 }
 
-#shows {
+.shows {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
+}
+
+.centerform{
+  display: grid;
+  justify-content: center;
 }
 
 .form {
@@ -119,4 +124,22 @@ body {
 
 .submit:active {
   background-color: #0B5394;
+}
+
+h1, 
+h2 {
+  text-align: center;
+}
+
+progress {
+  justify-content: center;
+  accent-color: #0B5394;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
