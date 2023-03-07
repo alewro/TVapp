@@ -85,7 +85,7 @@ button {
   outline: none;
   padding: 10px 16px;
   text-decoration: none;
-  transition: color 100ms;
+  transition: 100ms;
   touch-action: manipulation;
   background-repeat: no-repeat;
   background-size: 0%;
@@ -97,11 +97,9 @@ button {
 }
 
 .button-3:hover {
-
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  color:#003b4700;
 
 }
 
