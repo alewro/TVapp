@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Manage your shows</h1>
+<h1 class="header">Manage your shows</h1>
 <div class="buttons">
   <%= link_to "New story", new_story_path, class:"button-1" %>
   <%= link_to "Back to home page", root_path, class:"button-1" %>
@@ -8,7 +8,7 @@
 <div id="stories">
   <% @stories.each do |story| %>
     <div class="stories">
-      <%= link_to story.title, story, class:"button-3" %>
+      <%= link_to story.title, story, style:"background-image: url('/assets/#{story.title}.jpg');", class:"button-3" %>
     </div>
   <% end %>
 </div>
