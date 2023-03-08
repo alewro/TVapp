@@ -1,4 +1,5 @@
-<%= form_with(model: story) do |form| %>
+<div class="centerform">
+  <%= form_with(model: story) do |form| %>
   <% if story.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
@@ -10,23 +11,28 @@
       </ul>
     </div>
   <% end %>
+  <div class="form">
+    <div class="input-container ic">
+      <%= form.text_field :title, class:"input", placeholder: " " %>
+       <div class="cut"></div>
+      <%= form.label :title, class:"placeholder" %>
+    </div>
+      <div class="input-container ic">
+        <%= form.text_field :duration, class:"input", placeholder: " " %>
+         <div class="cut"></div>
+        <%= form.label :duration, class:"placeholder" %>
+      </div>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
+      <div class="input-container ic">
+        <%= form.number_field :weight, class:"input", placeholder: " " %>
+         <div class="cut"></div>
+        <%= form.label :weight, class:"placeholder" %>
+      </div>
 
-  <div>
-    <%= form.label :duration, style: "display: block" %>
-    <%= form.text_field :duration %>
+      <div>
+        <%= form.submit class:"submit" %>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <%= form.label :weight, style: "display: block" %>
-    <%= form.number_field :weight %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+  <% end %>
+</div>

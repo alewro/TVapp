@@ -1,9 +1,10 @@
-<h1>New story</h1>
+<h1 class="header">New story</h1>
 
 <%= render "form", story: @story %>
 
 <br>
 
-<div>
-  <%= link_to "Back to stories", stories_path %>
+<div class="buttons">
+  <%= link_to "Back to stories", manage_path, class:"button-1" %>
+  <%= link_to "Back to home page", root_path, class:"button-1" %>
 </div>

@@ -1,22 +1,23 @@
+
 <p style="color: green"><%= notice %></p>
-<div>
-<h1>You have <%= @coupons %> coupons left</h1>
+<div class="header">
+  <h1>You have <%= @coupons %> coupons left</h1>
 
-<progress value=<%= @coupons %> max="60"></progress>
+  <progress value=<%= @coupons %> max="60"></progress>
 
-<h2>Select a show</h2>
+  <h2>Select a show</h2>
 </div>
 
-<div id="stories">
+<div class="shows">
   <% @stories.each do |story| %>
     <% if story.weight <= @coupons %>
-      <%= button_to "", story, method: :counting, style:"background-image: url('/assets/#{story.title}.jpg');" %>
+      <%= button_to "", story, method: :counting, style:"background-image: url('/assets/#{story.title}.jpg');", class:"button-5" %>
     <% elsif story.weight > @coupons && story.weight < 10 %>
-      <%= button_to story.title, story, method: :counting %>
+      <%= button_to "", story, method: :counting, style:"background-image: url('/assets/#{story.title}.jpg');", class:"button-5" %>
     <% end %>
   <% end %>
 </div>
 
 <div>
-<%= link_to "Back to home page", root_path %>
+<%= link_to "Back to home page", root_path, class:"button-1" %>
 </div>
